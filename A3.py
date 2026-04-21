@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Dependencies are listed in requirements.txt.
-
-
 # In[41]:
 
 
@@ -11,6 +8,8 @@ from pathlib import Path
 from urllib.request import urlretrieve
 
 url = "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
+output_dir = Path("outputs")
+output_dir.mkdir(parents=True, exist_ok=True)
 
 Path("data").mkdir(parents=True, exist_ok=True)
 if not Path("data/tinyshakespeare.txt").exists():
@@ -428,6 +427,9 @@ plt.ylabel("Cross-Entropy Loss")
 plt.title("Training and Validation Loss")
 plt.legend()
 plt.grid(True)
+loss_curve_path = output_dir / "training_validation_loss.png"
+plt.savefig(loss_curve_path, dpi=200, bbox_inches="tight")
+print(f"Saved loss curve to {loss_curve_path}")
 plt.show()
 
 
@@ -477,6 +479,9 @@ fig.suptitle("Attention Heatmaps Across Layers and Heads", fontsize=14)
 fig.subplots_adjust(left=0.08, right=0.88, bottom=0.12, top=0.90, wspace=0.12, hspace=0.28)
 cbar_ax = fig.add_axes([0.91, 0.20, 0.018, 0.62])
 fig.colorbar(im, cax=cbar_ax, label="Attention Weight")
+attention_heatmap_path = output_dir / "attention_heatmaps.png"
+fig.savefig(attention_heatmap_path, dpi=200, bbox_inches="tight")
+print(f"Saved attention heatmaps to {attention_heatmap_path}")
 plt.show()
 
 

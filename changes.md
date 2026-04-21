@@ -107,3 +107,21 @@ This file tracks changes made with AI assistance so there is a transparent recor
 #### User contribution
 
 - Requested a clearer setup note for users running the notebook.
+
+#### AI change
+
+- Removed the notebook dependency-install cell now that dependencies are documented in `requirements.txt` and `README.md`.
+- Regenerated `A3.py` from the cleaned notebook and kept the script from redownloading the dataset when it already exists.
+
+#### User contribution
+
+- Pointed out that the notebook no longer needs a `!pip install ...` cell after adding setup instructions.
+
+#### AI change
+
+- Updated `A3.py` so the script creates an `outputs/` directory and saves `training_validation_loss.png` and `attention_heatmaps.png`.
+- Updated `README.md` to document the generated figure output paths.
+
+#### User contribution
+
+- Requested that the Python script write graph and heatmap outputs to a directory.

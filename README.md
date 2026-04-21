@@ -66,6 +66,11 @@ The script trains for 5 epochs with:
 
 After training, it prints validation perplexity and displays the loss curve and attention heatmaps.
 
+The script also saves generated figures to:
+
+- `outputs/training_validation_loss.png`
+- `outputs/attention_heatmaps.png`
+
 ## Reproducibility
 
 The code sets Python, NumPy, and PyTorch random seeds to `42`. CUDA deterministic settings are enabled when a GPU is available.
