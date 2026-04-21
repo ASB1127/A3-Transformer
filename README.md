@@ -25,6 +25,8 @@ This project implements a small Transformer language model for next-token predic
 
 ## Setup
 
+If your notebook environment already has the required dependencies installed, you can open `A3.ipynb` and run it directly. Otherwise, create the environment below first. The same environment can be used for both the notebook and the Python script.
+
 Create and activate a virtual environment, then install dependencies:
 
 ```bash

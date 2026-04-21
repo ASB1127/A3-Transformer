@@ -99,3 +99,11 @@ This file tracks changes made with AI assistance so there is a transparent recor
 #### User contribution
 
 - Requested that the README prioritize running the notebook as the main workflow.
+
+#### AI change
+
+- Clarified in `README.md` that environment setup is only needed if the notebook environment does not already have the required dependencies, and that the same environment works for both notebook and script execution.
+
+#### User contribution
+
+- Requested a clearer setup note for users running the notebook.
