@@ -91,3 +91,11 @@ This file tracks changes made with AI assistance so there is a transparent recor
 #### User contribution
 
 - Requested a proper `.gitignore` so local environment files are not committed.
+
+#### AI change
+
+- Updated `README.md` so the notebook-running instructions appear before the Python script instructions.
+
+#### User contribution
+
+- Requested that the README prioritize running the notebook as the main workflow.

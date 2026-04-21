@@ -33,9 +33,19 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run
+## Run the Notebook
 
-To run the Python script:
+The easiest way to reproduce the assignment is to run the notebook directly:
+
+```bash
+jupyter notebook A3.ipynb
+```
+
+Then run the cells from top to bottom. The notebook includes the training logs, validation perplexity, loss curve, and attention heatmaps used for the report.
+
+## Run the Python File
+
+If you prefer a plain Python version, run:
 
 ```bash
 python A3.py
